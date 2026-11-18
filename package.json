@@ -1,0 +1,19 @@
+{
+  "name": "anilist-peak-replacer",
+  "version": "4.0.0",
+  "description": "Replaces slang \"peak\" on AniList with \"great\" or \"greatness\". A decision model tells slang from other uses. Hover a replaced word to see the original.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun run build.ts",
+    "check": "bun check && bun test",
+    "test:live": "PEAK_REPLACER_LIVE=1 bun test test/live.test.ts",
+    "evaluate": "bun run evaluation/evaluate.ts"
+  },
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^21.0.4",
+    "@types/bun": "^1.4.4",
+    "typescript": "^7.0.2"
+  }
+}
